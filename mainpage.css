@@ -1,0 +1,141 @@
+/*######## Default #######*/
+body{
+    font-family: 'Poppins',sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    color: black;
+}
+.container{
+    max-width: 750px;
+    width: 100%;
+    margin: auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+/*######## nav bar #######*/
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 10px 60px;
+}
+.logo{
+    text-decoration: none;
+    color: inherit;
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+}
+.right-navBav{
+    display: flex;
+    max-width: 400px;
+    width: 100%;
+    list-style: none;
+    justify-content: space-between;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+    transition: 0.5s ease-in-out;
+}
+.right-navBav li{
+    flex: 1;
+    margin: auto;
+    min-width: fit-content;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10px;
+}
+.right-navBav li a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 20px;
+    font-weight: bolder;
+    white-space: nowrap;
+}
+.dropDown{
+    display: none;
+    text-decoration: none;
+    color: inherit;
+    font-size: 20px;
+    text-align: center;
+}
+/*######## content section #######*/
+
+.simpleArticle{
+    width: 100%;
+    margin-bottom: 30px;
+    border-bottom-width: 1px;
+    border-bottom-style: dashed; 
+    border-bottom-color: lightsteelblue;
+}
+.articleHeader a{
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.articleContent{
+    display: block;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.articleContent img{
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.articleContent .excerpt{
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+.pagination{
+    margin: auto;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    max-width: 200px;
+    width: 100%;
+    justify-content: space-between;
+}
+.page-item{
+    width: 30px;
+    border: 1px solid #dee2e6;
+    display: flex;
+    justify-content: space-around;
+}
+.page-link{
+    padding: 5px;
+    text-decoration: none;
+    color: #007bff;
+}
+/*######## footer #######*/
+.footer{
+    background-color: #282828;
+}
+/*######## Mobile #######*/
+@media(max-width: 616px){
+    .navBar{
+        justify-content: space-around;
+        flex-direction: column;
+        padding: 0px 60px
+    }
+    .right-navBav{
+        flex-direction: column;
+        display: none;
+        margin: auto;
+    }
+    .dropDown{
+        display: block;
+    }
+    .right-navBav.drop{
+        display: flex;
+    }
+}
