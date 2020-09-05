@@ -7,6 +7,7 @@
     <title>Admin Page</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="adminPage.css">
+    <link rel="stylesheet" href="mainpage.css">
 </head>
 
 <body>
@@ -19,6 +20,20 @@
         </ul>
         <a href="#" onclick="DropDown()" class="dropDown" id="dropDown">&#9776;</a>
     </nav>
+    <!--Post Panel-->
+    <div class="PostPanel">
+        <div class="container">
+            <div class="postField">
+                <h3>Add New Post</h3>
+                <form action="">
+                    <input class="postTitle" type="text" placeholder="Add your title">
+                    <textarea class="postContent" type="text" placeholder="Add your content">
+                    </textarea>
+                    <input type="submit" class="SubmitButton">
+                </form>
+            </div>
+        </div>
+    </div>
     <!--Login portal-->
     <div class="loginPortal-container" id="loginPortal-container">
         <div class="loginPortal animateZoom">
