@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="adminPage.css">
+</head>
+
+<body>
+    <nav class="navBar" id="navBar">
+        <a href="#" class="logo">Admin panel</a>
+        <ul class="right-navBav" id="right-navBav">
+            <li><a href="#">Dashboard</a></li>
+            <li onclick="viewPostPanel()"><a href="#">Post</a></li>
+            <li onclick="onOFFLogin()"><a href="#">Log in</a></li>
+        </ul>
+        <a href="#" onclick="DropDown()" class="dropDown" id="dropDown">&#9776;</a>
+    </nav>
+    <!--Login portal-->
+    <div class="loginPortal-container" id="loginPortal-container">
+        <div class="loginPortal animateZoom">
+            <button class="close" onclick="onOFFLogin()">&times;</button>
+            <form class="loginForm" action="">
+                <label for="MemberName">Member name</label>
+                <input type="text" placeholder="Enter Member name" name="MemberName" required>
+                <label for="password">Password</label>
+                <input type="password" placeholder="Enter Password" name="password" required>
+                <button class="loginButton" type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+    <script src="adminPage.js"></script>
+</body>
