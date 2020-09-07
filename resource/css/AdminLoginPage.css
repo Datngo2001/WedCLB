@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body{
+    margin: 0;
+}
+.loginPortal-container {    
+  display: block;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.loginPortal {
+  max-width: 300px;
+  width: 100%;
+  background-color: whitesmoke;
+  padding: 30px;
+  /*center the login form*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*#####################*/
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+.loginPortal label {
+  font-size: 20px;
+  font-weight: 600;
+}
+.loginPortal input {
+  width: 100%;
+  line-height: 2;
+  font-size: 20px;
+  margin: 10px auto;
+}
+.loginButton {
+  width: 100%;
+  font-size: 20px;
+  color: white;
+  font-weight: bolder;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 0;
+  background-color: #4caf50;
+}
+button:hover {
+  opacity: 0.8;
+}
