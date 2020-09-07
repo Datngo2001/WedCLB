@@ -1,30 +1,57 @@
-.postField{
-    display: flex;
-    flex-direction: column;
+/*######### add new blog ###########*/
+.addNewBlog {
+  display: flex;
+  flex-direction: column;
 }
-.postTitle{
-    width: 100%;
-    line-height: 2;
-    font-size: 20px;
-    margin: 10px auto;
+
+.blogTitle,
+.blogId {
+  width: 100%;
+  line-height: 2;
+  font-size: 20px;
+  margin: 10px auto;
 }
-.postContent{
-    width: 100%;
-    line-height: 1.5;
-    font-size: 16px;
-    margin: 10px auto;
-    height: 500px;
-    line-clamp: 5000;
-    overflow: scroll;
-    
+.blogId {
+  width: 30%;
+}
+.blogContent {
+  width: 100%;
+  line-height: 1.5;
+  font-size: 16px;
+  margin: 10px auto;
+  height: 500px;
+  line-clamp: 5000;
+  overflow: scroll;
 }
 .SubmitButton {
-  width: 30%;
+  width: fit-content;
   font-size: 20px;
   color: white;
   font-weight: bolder;
   border: none;
   border-radius: 5px;
-  padding: 10px 0;
+  padding: 10px 10px;
   background-color: #4caf50;
+}
+/*######### Find Blog ###########*/
+label {
+  font-size: 20px;
+}
+input.findBtn {
+  width: 100px;
+  font-size: 16px;
+}
+.findResult textarea {
+  line-clamp: 6000;
+}
+/*######### Modify and delete ###########*/
+.CancelButton {
+  width: fit-content;
+  font-size: 20px;
+  color: white;
+  font-weight: bolder;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 10px;
+  background-color: #ff033e;
 }

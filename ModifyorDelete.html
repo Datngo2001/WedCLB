@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="resource/css/mainpage.css">
+    <link rel="stylesheet" href="resource/css/adminPage.css">
+</head>
+
+<body>
+    <nav class="navBar" id="navBar">
+        <a href="#" class="logo">Admin panel</a>
+        <ul class="right-navBav" id="right-navBav">
+            <li><a href="admin.html">Dashboard</a></li>
+            <li><a href="addNewBlog.html">Post</a></li>
+            <li><a href="findBlog.html">Find blog</a></li>
+            <li><a href="modifyOrDelete.html">Modify or delete</a></li>
+        </ul>
+        <a href="#" onclick="DropDown()" class="dropDown" id="dropDown">&#9776;</a>
+    </nav>
+    <hr>
+    <div class="container">
+        <h1>Find and Modify or delete</h1>
+        <div class="findById">
+            <form action="" method="POST" target="">
+                <label for="IDtoFind">Blog ID: </label>
+                <input class="blogId" type="text" name="IDtoFind" id="">
+                <input class="SubmitButton findBtn" type="submit" value="Find">
+            </form>
+        </div>
+        <div class="findResult">
+            <form action="">
+                <label for="result">Result</label>
+                <textarea name="result" rows="60" cols="100" id=""></textarea>
+            </form>
+            <input type="submit" class="SubmitButton" value="Save Change">
+            <input type="reset" class="CancelButton" value="Cancel">
+        </div>
+    </div>
+    <script src="resource/js/mainpage.js"></script>
+</body>
+</html>

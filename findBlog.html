@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Page</title>
+    <title>Find blog</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="resource/css/adminPage.css">
     <link rel="stylesheet" href="resource/css/mainpage.css">
+    <link rel="stylesheet" href="resource/css/adminPage.css">
 </head>
 
 <body>
@@ -18,11 +18,26 @@
             <li><a href="addNewBlog.html">Post</a></li>
             <li><a href="findBlog.html">Find blog</a></li>
             <li><a href="modifyOrDelete.html">Modify or delete</a></li>
-            <li onclick="onOFFLogin()"><a href="#">Log in</a></li>
         </ul>
         <a href="#" onclick="DropDown()" class="dropDown" id="dropDown">&#9776;</a>
     </nav>
-    <!--Dashboard-->
-    <h1>Dashboard</h1>
+    <hr>
+    <div class="container">
+        <h1>Find a blog by id</h1>
+        <div class="findById">
+            <form action="" method="POST" target="">
+                <label for="IDtoFind">Blog ID: </label>
+                <input class="blogId" type="text" name="IDtoFind" id="">
+                <input class="SubmitButton findBtn" type="submit" value="Find">
+            </form>
+        </div>
+        <div class="findResult">
+            <form action="">
+                <label for="result">Result</label>
+                <textarea name="result" readonly rows="60" cols="100" id=""></textarea>
+            </form>
+        </div>
+    </div>
     <script src="resource/js/mainpage.js"></script>
 </body>
+</html>

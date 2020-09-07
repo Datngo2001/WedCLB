@@ -33,7 +33,7 @@ img {
 }
 .right-navBav {
   display: flex;
-  max-width: 400px;
+  max-width: 600px;
   width: 100%;
   list-style: none;
   justify-content: space-between;
@@ -201,7 +201,7 @@ button:hover {
   }
   
 /*######## Mobile #######*/
-@media (max-width: 616px) {
+@media (max-width: 800px) {
   .navBar {
     justify-content: space-around;
     flex-direction: column;

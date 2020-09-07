@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Page</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="resource/css/adminPage.css">
     <link rel="stylesheet" href="resource/css/mainpage.css">
+    <link rel="stylesheet" href="resource/css/adminPage.css">
 </head>
 
 <body>
@@ -18,11 +18,22 @@
             <li><a href="addNewBlog.html">Post</a></li>
             <li><a href="findBlog.html">Find blog</a></li>
             <li><a href="modifyOrDelete.html">Modify or delete</a></li>
-            <li onclick="onOFFLogin()"><a href="#">Log in</a></li>
         </ul>
         <a href="#" onclick="DropDown()" class="dropDown" id="dropDown">&#9776;</a>
     </nav>
-    <!--Dashboard-->
-    <h1>Dashboard</h1>
+    <hr>
+    <div class="container">
+        <div class="addNewBlog">
+            <h3>Add New Blog</h3>
+            <form action="">
+                <input name="blogId" class="blogId" type="text" placeholder="Your blog ID">
+                <input name="blogTitle" class="blogTitle" type="text" placeholder="Add your title">
+                <textarea name="blogContent" class="blogContent" type="text" placeholder="Add your content">
+                </textarea>
+                <input type="submit" class="SubmitButton">
+            </form>
+        </div>
+    </div>
     <script src="resource/js/mainpage.js"></script>
 </body>
+</html>
