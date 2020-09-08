@@ -40,7 +40,7 @@ img {
   align-content: center;
   margin: 0;
   padding: 0;
-  transition: 0.5s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 .right-navBav li {
   flex: 1;
@@ -49,6 +49,13 @@ img {
   display: flex;
   justify-content: space-around;
   padding: 0 10px;
+  transition: 0.2s ease-in-out;
+  border-radius: 2px;
+}
+.right-navBav li:hover{
+  background-color: gainsboro;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  transform: scale(1.05);
 }
 .right-navBav li a {
   text-decoration: none;
