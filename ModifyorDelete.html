@@ -28,7 +28,7 @@
             <form action="" method="POST" target="">
                 <label for="IdToFind">Blog ID: </label>
                 <input class="inputBlogId" type="text" name="IdToFind" id="">
-                <input class="findButton" type="submit" value="Find">
+                <input class="btn findButton" type="submit" value="Find">
             </form>
         </div>
         <br>
@@ -36,17 +36,17 @@
             <form action="" method="POST" target="">
                 <label for="TitleToFind">Blog Title: </label>
                 <input class="inputBlogTitle" type="text" name="TitleToFind" id="">
-                <input class="findButton" type="submit" value="Find">
+                <input class="btn findButton" type="submit" value="Find">
             </form>
         </div>
         <br>
         <div class="findResult">
             <form action="">
                 <label for="result">Result</label>
-                <textarea name="result" rows="60" cols="100" id=""></textarea>
+                <textarea name="result" class="blogContent" id=""></textarea>
             </form>
-            <input type="submit" class="SubmitButton" value="Save Change">
-            <input type="reset" class="CancelButton" value="Cancel">
+            <input type="submit" class="btn SubmitButton" value="Save Change">
+            <input type="reset" class="btn CancelButton" value="Cancel">
         </div>
         <hr>
         <h1>Delete</h1>
@@ -54,20 +54,21 @@
             <form id="deleteBlog" action="" method="POST" target="">
                 <label for="IdToDelete">Blog ID: </label>
                 <input class="inputBlogId" type="text" name="IdToDelete" id="">
-                <input class="deleteButton" onclick="onOffDeleteConfig()" type="button" value="Delete">
+                <input class="btn deleteButton" onclick="onOffDeleteConfig()" type="button" value="Delete">
             </form>
-            <div class="deleteConfig animateZoom" id="deleteConfig">
+            <div class="deleteConfig animateZoom" onfocus="followTheScreen()" tabindex="0" id="deleteConfig">
                 <h2>Are you sure to delete?</h2>
                 <hr>
                 <button class="close" onclick="onOffDeleteConfig()">&times;</button>
                 <div class="deleteOrCancel">
-                    <button class="deleteButton" form="deleteBlog" type="submit">Delete</button>
-                    <button class="CancelButton" onclick="onOffDeleteConfig()">Cancel</button>
+                    <button class="btn deleteButton" form="deleteBlog" type="submit">Delete</button>
+                    <button class="btn CancelButton" onclick="onOffDeleteConfig()">Cancel</button>
                 </div>
             </div>
         </div>
     </div>
     <script src="resources/js/mainpage.js"></script>
+    <script src="resources/js/adminPage.js"></script>></script>
 </body>
 
 </html>

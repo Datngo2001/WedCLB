@@ -8,26 +8,21 @@
   width: 100%;
   line-height: 2;
   font-size: 20px;
-  margin: 10px auto;
+  margin: 10px 2px;
 }
 .blogContent {
   width: 100%;
   line-height: 1.5;
   font-size: 16px;
-  margin: 10px auto;
+  margin: 10px 2px;
   height: 500px;
   line-clamp: 5000;
   overflow: scroll;
 }
 .SubmitButton {
-  width: fit-content;
   font-size: 20px;
   color: white;
   font-weight: bolder;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 10px;
-  background-color: #4caf50;
 }
 /*######### Find Blog ###########*/
 label {
@@ -37,20 +32,17 @@ label {
   width: 30%;
   line-height: 2;
   font-size: 20px;
-  margin: 10px auto;
+  margin: 10px 2px;
 }
 .findButton {
   width: 100px;
-  font-size: 16px;
   color: white;
   font-weight: bolder;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 10px;
-  background-color: #4caf50;
 }
 .findResult textarea {
+  margin: 2px;
   line-clamp: 6000;
+  width: 100%;
 }
 /*######### Modify and delete ###########*/
 .CancelButton {
@@ -58,26 +50,18 @@ label {
   font-size: 20px;
   color: white;
   font-weight: bolder;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 10px;
   background-color: #ff033e;
 }
 .deleteButton{
-  width: 100px;
   font-size: 20px;
   color: white;
   font-weight: bolder;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 10px;
-  background-color: #4caf50;
 }
 
 .deleteConfig{
-  position: absolute;
+  position: fixed;
   max-width: 500px;
-  width: 100%;
+  width: 90%;
   z-index: 10;
   background-color: whitesmoke;
   box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
@@ -86,8 +70,9 @@ label {
   border-radius: 5px;
   visibility: hidden;
   left: 50%;
-  transform: translate(-50%, 0);
-  top: 1300px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 10px;
 }
 .deleteConfig h2{
   text-align: center;
