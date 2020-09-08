@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Find blog</title>
+    <title>Modify and delete</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="resources/css/mainpage.css">
     <link rel="stylesheet" href="resources/css/adminPage.css">
@@ -23,7 +23,7 @@
     </nav>
     <hr>
     <div class="container">
-        <h1>Find and Modify or delete</h1>
+        <h1>Find and Modify</h1>
         <div class="findById">
             <form action="" method="POST" target="">
                 <label for="IdToFind">Blog ID: </label>
@@ -39,7 +39,7 @@
                 <input class="findButton" type="submit" value="Find">
             </form>
         </div>
-        <br>    
+        <br>
         <div class="findResult">
             <form action="">
                 <label for="result">Result</label>
@@ -48,7 +48,26 @@
             <input type="submit" class="SubmitButton" value="Save Change">
             <input type="reset" class="CancelButton" value="Cancel">
         </div>
+        <hr>
+        <h1>Delete</h1>
+        <div class="deleteById">
+            <form id="deleteBlog" action="" method="POST" target="">
+                <label for="IdToDelete">Blog ID: </label>
+                <input class="inputBlogId" type="text" name="IdToDelete" id="">
+                <input class="deleteButton" onclick="onOffDeleteConfig()" type="button" value="Delete">
+            </form>
+            <div class="deleteConfig animateZoom" id="deleteConfig">
+                <h2>Are you sure to delete?</h2>
+                <hr>
+                <button class="close" onclick="onOffDeleteConfig()">&times;</button>
+                <div class="deleteOrCancel">
+                    <button class="deleteButton" form="deleteBlog" type="submit">Delete</button>
+                    <button class="CancelButton" onclick="onOffDeleteConfig()">Cancel</button>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="resources/js/mainpage.js"></script>
 </body>
+
 </html>
