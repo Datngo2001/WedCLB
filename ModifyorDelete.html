@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Find blog</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="resource/css/mainpage.css">
-    <link rel="stylesheet" href="resource/css/adminPage.css">
+    <link rel="stylesheet" href="resources/css/mainpage.css">
+    <link rel="stylesheet" href="resources/css/adminPage.css">
 </head>
 
 <body>
@@ -26,11 +26,20 @@
         <h1>Find and Modify or delete</h1>
         <div class="findById">
             <form action="" method="POST" target="">
-                <label for="IDtoFind">Blog ID: </label>
-                <input class="blogId" type="text" name="IDtoFind" id="">
-                <input class="SubmitButton findBtn" type="submit" value="Find">
+                <label for="IdToFind">Blog ID: </label>
+                <input class="inputBlogId" type="text" name="IdToFind" id="">
+                <input class="findButton" type="submit" value="Find">
             </form>
         </div>
+        <br>
+        <div class="findByTitle">
+            <form action="" method="POST" target="">
+                <label for="TitleToFind">Blog Title: </label>
+                <input class="inputBlogTitle" type="text" name="TitleToFind" id="">
+                <input class="findButton" type="submit" value="Find">
+            </form>
+        </div>
+        <br>    
         <div class="findResult">
             <form action="">
                 <label for="result">Result</label>
@@ -40,6 +49,6 @@
             <input type="reset" class="CancelButton" value="Cancel">
         </div>
     </div>
-    <script src="resource/js/mainpage.js"></script>
+    <script src="resources/js/mainpage.js"></script>
 </body>
 </html>
