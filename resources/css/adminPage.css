@@ -1,14 +1,19 @@
+/*######### Default ###########*/
+input{
+  line-height: 2;
+  font-size: 20px;
+  margin: 10px 2px;
+}
+label{
+  line-height: 2;
+}
 /*######### add new blog ###########*/
 .addNewBlog {
   display: flex;
   flex-direction: column;
 }
-
 .inputBlogTitle{
   width: 100%;
-  line-height: 2;
-  font-size: 20px;
-  margin: 10px 2px;
 }
 .blogContent {
   width: 100%;
@@ -19,6 +24,7 @@
   line-clamp: 5000;
   overflow: scroll;
 }
+
 .SubmitButton {
   font-size: 20px;
   color: white;
@@ -30,9 +36,6 @@ label {
 }
 .inputBlogId {
   width: 30%;
-  line-height: 2;
-  font-size: 20px;
-  margin: 10px 2px;
 }
 .findButton {
   width: 100px;

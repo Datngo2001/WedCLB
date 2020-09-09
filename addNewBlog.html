@@ -8,6 +8,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="resources/css/mainpage.css">
     <link rel="stylesheet" href="resources/css/adminPage.css">
+    <script src="https://cdn.tiny.cloud/1/3vika85zxcmchpk9yiu3jx3gifn74h88judn089ndmpve4s8/tinymce/5/tinymce.min.js"
+        referrerpolicy="origin"></script>
+    <script>
+        tinymce.init({
+            selector: '#newBlogContent, #newSubcontent',
+            plugins: 'media table'
+        });
+    </script>
 </head>
 
 <body>
@@ -21,18 +29,31 @@
         </ul>
         <a href="#" onclick="DropDown()" class="dropDown" id="dropDown">&#9776;</a>
     </nav>
-    <hr>
+    <div class="navBarPlaceHolder" id="navBarPlaceHolder"></div>
     <div class="container">
         <div class="addNewBlog">
             <h1>Add New Blog</h1>
-            <form action="">
+            <form action="" method="POST">
+                <label for="newBlogTitle">Your title:</label>
                 <input name="newBlogTitle" class="inputBlogTitle" type="text" placeholder="Add your title">
-                <textarea name="newBlogContent" class="blogContent" type="text">
+                <br>
+                <label for="newBlogContent">Your content:</label>
+                <textarea id="newBlogContent" name="newBlogContent" class="blogContent" type="text">
                 </textarea>
+                <br>
+                <label for="newSubcontent">Your subcontent:</label>
+                <textarea id="newSubcontent" name="newSubcontent" class="subcontent" type="text" placeholder="Subcontent">
+                </textarea>
+                <br>
+                <input name="author" class="author" type="text" placeholder="Author">
+                <br>
+                <input name="source" class="source" type="text" placeholder="Source">
+                <br>
                 <input type="submit" class="btn SubmitButton">
             </form>
         </div>
     </div>
     <script src="resources/js/mainpage.js"></script>
 </body>
+
 </html>

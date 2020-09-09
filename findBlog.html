@@ -21,7 +21,7 @@
         </ul>
         <a href="#" onclick="DropDown()" class="dropDown" id="dropDown">&#9776;</a>
     </nav>
-    <hr>
+    <div class="navBarPlaceHolder" id="navBarPlaceHolder"></div>
     <div class="container">
         <h1>Find a blog by id</h1>
         <div class="findById">
@@ -41,12 +41,26 @@
         </div>
         <br>
         <div class="findResult">
-            <form action="">
-                <label for="result">Result</label>
-                <textarea name="result" readonly rows="60" cols="100" id=""></textarea>
+            <h1>Result</h1>
+            <form action="" method="POST">
+                <label for="BlogTitle">Title:</label>
+                <input name="BlogTitle" class="inputBlogTitle" type="text" placeholder="Add your title" readonly>
+                <br>
+                <label for="BlogContent">Content:</label>
+                <textarea id="BlogContent" name="BlogContent" class="blogContent" type="text" readonly>
+                    </textarea>
+                <br>
+                <label for="Subcontent">Subcontent:</label>
+                <textarea id="Subcontent" name="Subcontent" class="subcontent" type="text" placeholder="Subcontent" readonly>
+                </textarea>
+                <br>
+                <input name="author" class="author" type="text" placeholder="Author" readonly>
+                <br>
+                <input name="source" class="source" type="text" placeholder="Source" readonly>
             </form>
         </div>
     </div>
     <script src="resources/js/mainpage.js"></script>
 </body>
+
 </html>

@@ -8,6 +8,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="resources/css/mainpage.css">
     <link rel="stylesheet" href="resources/css/adminPage.css">
+    <script src="https://cdn.tiny.cloud/1/3vika85zxcmchpk9yiu3jx3gifn74h88judn089ndmpve4s8/tinymce/5/tinymce.min.js"
+        referrerpolicy="origin"></script>
+    <script>
+        tinymce.init({
+            selector: '#BlogContent, #Subcontent',
+            plugins: 'media table'
+        });
+    </script>
+
 </head>
 
 <body>
@@ -21,7 +30,7 @@
         </ul>
         <a href="#" onclick="DropDown()" class="dropDown" id="dropDown">&#9776;</a>
     </nav>
-    <hr>
+    <div class="navBarPlaceHolder" id="navBarPlaceHolder"></div>
     <div class="container">
         <h1>Find and Modify</h1>
         <div class="findById">
@@ -40,13 +49,26 @@
             </form>
         </div>
         <br>
-        <div class="findResult">
-            <form action="">
-                <label for="result">Result</label>
-                <textarea name="result" class="blogContent" id=""></textarea>
+        <div class="Modify">
+            <h1>Modify Here</h1>
+            <form action="" method="POST">
+                <label for="BlogTitle">Title:</label>
+                <input name="BlogTitle" class="inputBlogTitle" type="text" placeholder="Add your title">
+                <br>
+                <label for="BlogContent">Content:</label>
+                <textarea id="BlogContent" name="BlogContent" class="blogContent" type="text">
+                </textarea>
+                <br>
+                <label for="Subcontent">Subcontent:</label>
+                <textarea id="Subcontent" name="Subcontent" class="subcontent" type="text" placeholder="Subcontent">
+                </textarea>
+                <br>
+                <input name="author" class="author" type="text" placeholder="Author">
+                <br>
+                <input name="source" class="source" type="text" placeholder="Source">
+                <br>
+                <input type="submit" class="btn SubmitButton" value="Save Change">
             </form>
-            <input type="submit" class="btn SubmitButton" value="Save Change">
-            <input type="reset" class="btn CancelButton" value="Cancel">
         </div>
         <hr>
         <h1>Delete</h1>
