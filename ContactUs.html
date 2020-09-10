@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How we create this web site</title>
+    <title>Contact us</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="resources/css/mainpage.css">
+    <link rel="stylesheet" href="resources/css/contactUs.css">
     <script src="resources/js/mainpage.js"></script>
 </head>
 
@@ -26,29 +27,16 @@
         <div class="leftBody"></div>
         <div class="rightBody"></div>
         <div class="mainBody">
-            <article class="postEntry" id="">
-                <div class="entryThumbmail">
-                    <img src="resources/images/000-Online-Code-Editors.png" alt="">
-                </div>
-                <div class="entryContent">
-                    <h1 class="entryHeader"><a href="post1.html">Post 1</a></h1>
-                    <div class="entryExcerpt">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat.
-                    </div>
-                    <a class="readMoreLink" href="post1.html">Read more</a>
-                </div>
-            </article>
-
-            <ul class="pagination">
-                <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
-            </ul>
+            <h1>Contact us</h1>
+            <form class="contactForm" name="contactForm" action="" method="POST">
+                <input name="userRealName" placeholder="Your name" type="text"><hr>
+                <input name="userEmail" placeholder="Your email" type="text"><hr>
+                <input name="userPhone" placeholder="Your phone number" type="text"><hr>
+                <textarea name="userMessage" placeholder="Your Message" type="text" rows="5"></textarea><hr>
+                <input class="btn" type="submit" value="Send">
+            </form>
         </div>
+    </section>
     </section>
     <section class="footer">
         <div class="container">
@@ -71,5 +59,4 @@
         </div>
     </div>
 </body>
-
 </html>

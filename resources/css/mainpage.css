@@ -16,6 +16,29 @@ body {
   padding: 10px 20px;
   box-sizing: border-box;
 }
+.body{
+  display: flex;
+}
+.leftBody{
+  flex: 1;
+  order: 1;
+  overflow: hidden;
+  background-color: whitesmoke;
+  padding: 5px;
+}
+.rightBody{
+  flex: 1;
+  order: 3;
+  overflow: hidden;
+  background-color: whitesmoke;
+  padding: 5px;
+}
+.mainBody{
+  flex: 2;
+  order: 2;
+  overflow: hidden;
+  padding: 5px;
+}
 img{
   width: 100%;
   height: auto;
@@ -39,7 +62,7 @@ img{
 /*######## nav bar #######*/
 .navBarPlaceHolder{
   width: 100%;
-  height: 80px;
+  height: 57px;
 }
 .navBar {
   display: flex;
@@ -50,7 +73,8 @@ img{
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: white;
+  background-color: #555353;
+  color: white;
   transition: 0.2s;
 }
 .navBar.scrollDownDisappear{
@@ -59,7 +83,7 @@ img{
 .logo {
   text-decoration: none;
   color: inherit;
-  font-size: 40px;
+  font-size: 25px;
   font-weight: bolder;
   text-align: center;
 }
@@ -85,7 +109,7 @@ img{
   border-radius: 2px;
 }
 .right-navBav li:hover {
-  background-color: gainsboro;
+  background-color: slategray;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
   transform: scale(1.05);
 }
@@ -103,38 +127,56 @@ img{
   font-size: 20px;
   text-align: center;
 }
-
 /*######## content section #######*/
 
-.simpleArticle {
+.postEntry{
+  padding: 0;
+}
+.entryThumbmail{
   width: 100%;
-  margin-bottom: 30px;
-  border-bottom-width: 1px;
-  border-bottom-style: dashed;
-  border-bottom-color: lightsteelblue;
-}
-.articleHeader a {
-  color: inherit;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 30px;
-  font-weight: bolder;
-}
-.articleContent {
-  display: block;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
   overflow: hidden;
-  margin-bottom: 30px;
 }
-.articleContent img {
-  width: 150px;
-  height: 150px;
-  float: left;
-  margin-right: 10px;
-  border-radius: 5px;
+.entryContent{
+ width: 90%;
+ margin: auto;
+ position: relative;
+ bottom: 100px;
+ background-color: white;
+ font-family: 'Times New Roman', Times, serif;
+ overflow: hidden;
 }
-.articleContent .excerpt {
+.entryHeader{
+  font-size: 33px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
   line-height: 1.5;
-  font-size: 1.2rem;
+  padding: 30px 0;
+  margin: 0;
+  padding: 0;
+  line-height: 2;
+}
+.entryHeader a{
+  text-decoration: none;
+  color: black;
+}
+.entryHeader a:hover{
+  color: #4caf50;
+}
+.entryExcerpt{
+  font-size: 1.5rem;
+  font-family: inherit;
+  padding: 0 10px;
+}
+.readMoreLink{
+  float: right;
+  font-size: 14px;
+  color: lightslategrey;
+  font-style: italic;
+  margin-right: 20px;
 }
 .pagination {
   margin: auto;
@@ -217,7 +259,7 @@ img{
 .show {
   display: block;
 }
-/* Add Zoom Animation */
+/* Animation */
 
 .animateZoom {
   -webkit-animation: animatezoom 0.6s;
@@ -250,7 +292,7 @@ img{
     padding: 0px 60px;
   }
   .navBarPlaceHolder{
-    height: 91px;
+    height: 68px;
   }
   .right-navBav {
     flex-direction: column;
@@ -262,5 +304,11 @@ img{
   }
   .right-navBav.drop {
     display: flex;
+  }
+  .body{
+    flex-direction: column;
+  }
+  .mainBody{
+    order: 1;
   }
 }

@@ -1,0 +1,96 @@
+h1{
+    text-align: center;
+}
+.memberCardBox{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.memberCard{
+    border-radius: 10px;
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+    overflow: hidden;
+    max-width: 310px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.coverImage{
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+.profile{
+    display: flex;
+}
+.avatarWrapper{
+    flex: 4;
+}
+.avatar{
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: -25%;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+    background-color: gray;
+    background-image: url();
+    overflow: hidden;
+}
+.description{
+    flex: 6;
+    padding-right: 5px;
+}
+.name{
+    margin: 0;
+    line-height: 3;
+}
+.index{
+    display: flex;
+    padding-top: 5px;
+    height: 80px;
+    overflow: hidden;
+}
+.index span{
+    display: block;
+    color: white;
+}
+.number{
+    font-size: 2rem;
+}
+.index1{
+    flex: 1;
+    text-align: center;
+    background-color: rgb(0, 204, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.index2{
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    background-color: rgb(0, 204, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.index3{
+    flex: 1;
+    text-align: center;
+    background-color: rgb(0, 204, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+@media (max-width: 800px){
+    .memberCardBox{
+        flex-direction: column;
+        width: fit-content;
+        margin: auto;
+    }
+}
